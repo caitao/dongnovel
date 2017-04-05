@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title #{title}
+    link(href='/libs/bootstrap/dist/css/bootstrap.min.css', rel='styleSheet')
+    //- link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+  body
+    //- include ../partials/header1
+    //- .header
+    //-   h1.page-title www.dongnovel.com
+    include ../partials/nav
+    .container 
+      block content
+    .footer
+      p Copyright © 2017 www.dongnovel.com DongNovel ® is a Registered Trademark of Futures (AU)Ltd.in the Mars Community and other solar systems.
+    script(src='/libs/jquery/dist/jquery.min.js')
+    script(src='/libs/bootstrap/dist/js/bootstrap.min.js')

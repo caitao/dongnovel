@@ -1,0 +1,32 @@
+* {
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  background: url(/images/HomeImage.jpg);
+  background-position: center;
+  background-size:cover;
+}
+.header .page-title {
+  font-weight: 200;
+  font-size: 40px;
+  text-align: center;
+  padding: 100px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
+.footer {
+  margin: 50px auto;
+  max-width: 600px;
+  border-top: 1px solid #444;
+  padding: 20px 0;
+}
+.footer p {
+  color: #444;
+  font-size: 12px;
+}
