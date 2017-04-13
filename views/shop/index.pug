@@ -1,115 +1,64 @@
-extends ../layouts/layout1
-//- 
-//- block content
-//-   nav.navbar.navbar-inverse.navbar-fixed-top
-//-     .container
-//-       .navbar-header
-//-         button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-//-           span.sr-only Toggle navigation
-//-           span.icon-bar
-//-           span.icon-bar
-//-           span.icon-bar
-//-         a.navbar-brand(href='#') 董小说
-//-         ul.nav.navbar-nav
-//-           li.live
-//-             a(href='#')
-//-               | 作者
-//-               span.sr-only (current)
-//-           li
-//-             a(href='#')
-//-               | 小说
-//-               span.sr-only (current)
-//-           //- li
-//-           //-   a(href='#') Link
-//-           li.dropdown
-//-             a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-//-               | 合作
-//-               span.caret
-//-             ul.dropdown-menu
-//-               li
-//-                 a(href='#') Action
-//-               li
-//-                 a(href='#') Another action
-//-               li
-//-                 a(href='#') Something else here
-//-               li.divider(role='separator')
-//-               li
-//-                 a(href='#') Separated link
-//-               li.divider(role='separator')
-//-               li
-//-                 a(href='#') One more separated link
-//-       #navbar.navbar-collapse.collapse
-//-         form.navbar-form.navbar-right
-//-           .form-group
-//-             div.input-group.input-group-sm
-//-              input.form-control(type='text', placeholder='Email')
-//-           .form-group
-//-             div.input-group.input-group-sm
-//-              input.form-control(type='password', placeholder='Password', aria-describedby='sizing-addon3')
-//-           div.btn-group.btn-group-sm
-//-            button.btn.btn-success(type='submit') 登录
-//-       // /.navbar-collapse
-//-   #myCarousel.carousel.slide(data-ride='carousel')
-//-    // Indicators
-//-    ol.carousel-indicators
-//-      li.active(data-target='#myCarousel', data-slide-to='0')
-//-      li(data-target='#myCarousel', data-slide-to='1')
-//-      li(data-target='#myCarousel', data-slide-to='2')
-//-    .carousel-inner(role='listbox')
-//-      .item.active
-//-        img.first-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='First slide')
-//-        .container
-//-          .carousel-caption
-//-            h1 Example headline.
-//-            p
-//-              | Note: If you're viewing this page via a 
-//-              code file://
-//-              |  URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
-//-            p
-//-              a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
-//-      .item
-//-        img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Second slide')
-//-        .container
-//-          .carousel-caption
-//-            h1 Another example headline.
-//-            p
-//-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-//-            p
-//-              a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
-//-      .item
-//-        img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Third slide')
-//-        .container
-//-          .carousel-caption
-//-            h1 One more for good measure.
-//-            p
-//-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-//-            p
-//-              a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
-//-    a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-//-      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-//-      span.sr-only Previous
-//-    a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-//-      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-//-      span.sr-only Next
-//-   .container
-//-     // Example row of columns
-//-     .row
-//-       .col-md-4
-//-         h2 古装
-//-         p
-//-           | 斑竹王妃 皇上，皇后嫁到 冷王的小蛮妃 厨娘太子妃 却性情耿直，始终坚持对法律的信念，不肯向任何非正义势力低头。最终一纸状书将拖欠自s
-//-         p
-//-           a.btn.btn-default(href='#', role='button') 在线阅读 »
-//-       .col-md-4
-//-         h2 现代
-//-         p
-//-           | 你好，律师小姐 黑白之恋 肥女和美女 前妻不好惹 卧底干探 贤妻要革命 傲骨贤妻不下堂 鱼美人 明星总裁 夜莺千金 侦探先生的法医小姐
-//-         p
-//-           a.btn.btn-default(href='#', role='button') 在线阅读 »
-//-       .col-md-4
-//-         h2 novels
-//-         p
-//-           | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-//-         p
-//-           a.btn.btn-default(href='#', role='button') View details »
-//-     hr
+extends ../layouts/layout
+
+block content
+  #myCarousel.carousel.slide(data-ride='carousel')
+   // Indicators
+   ol.carousel-indicators
+     li.active(data-target='#myCarousel', data-slide-to='0')
+     li(data-target='#myCarousel', data-slide-to='1')
+     li(data-target='#myCarousel', data-slide-to='2')
+   .carousel-inner(role='listbox')
+     .item.active
+       img.first-slide(src='/images/FS.jpg', alt='First slide')
+       .container
+         .carousel-caption
+           h1 你好，律师小姐
+           p
+             |苏正轶叹了口气，语气缓下来：“潇潇，你始终不懂，理想和现实是不同的，这个社会的规则就是如此，多少年轻律师都有相同的经历，为什么人家可以忍，你就不能忍一时不快呢......
+           p
+             a.btn.btn-lg.btn-primary(href='#', role='button') 注册读者
+     .item
+       img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Second slide')
+       .container
+         .carousel-caption
+           h1 Another example headline.
+           p
+             | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+           p
+             a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
+     .item
+       img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Third slide')
+       .container
+         .carousel-caption
+           h1 One more for good measure.
+           p
+             | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+           p
+             a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+   a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+     span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+     span.sr-only Previous
+   a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+     span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+     span.sr-only Next
+  .container
+    // Example row of columns
+    .row
+      .col-md-4
+        h2 古装
+        p
+          | 斑竹王妃 皇上，皇后嫁到 冷王的小蛮妃 厨娘太子妃 却性情耿直，始终坚持对法律的信念，不肯向任何非正义势力低头。最终一纸状书将拖欠自s
+        p
+          a.btn.btn-default(href='#', role='button') 在线阅读 »
+      .col-md-4
+        h2 现代
+        p
+          | 你好，律师小姐 黑白之恋 肥女和美女 前妻不好惹 卧底干探 贤妻要革命 傲骨贤妻不下堂 鱼美人 明星总裁 夜莺千金 侦探先生的法医小姐
+        p
+          a.btn.btn-default(href='#', role='button') 在线阅读 »
+      .col-md-4
+        h2 novels
+        p
+          | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+        p
+          a.btn.btn-default(href='#', role='button') View details »   
